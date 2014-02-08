@@ -18,12 +18,25 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self loadWebView];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+- (void)loadWebView {
+    
+    NSURL *myUrl = [NSURL URLWithString:@"http://prmg.de/shared/Schulkueche/Speiseplan.pdf"];
+    NSURLRequest *myRequest = [NSURLRequest requestWithURL:myUrl];
+    
+    [_webView loadRequest:myRequest];
+    
 }
 
 @end
