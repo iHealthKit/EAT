@@ -24,6 +24,8 @@
     
     [_navigationBarTitle setTitle:@"EAT"];
     
+    [self setURLRequest];
+    [self setWRefreshControl];
     [self loadWebView];
 }
 
@@ -34,15 +36,36 @@
 }
 
 
+- (void)setURLRequest {
+    
+    NSURL *myUrl = [NSURL URLWithString:@"http://prmg.de/shared/Schulkueche/Speiseplan.pdf"];
+    urlRequest = [NSURLRequest requestWithURL:myUrl];
+    
+    [self loadWebView];
+    
+}
+
+- (void)setWRefreshControl {
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
+    [_webView.scrollView addSubview:refreshControl];
+    
+}
+
 
 - (void)loadWebView {
     
-    NSURL *myUrl = [NSURL URLWithString:@"http://prmg.de/shared/Schulkueche/Speiseplan.pdf"];
-    NSURLRequest *myRequest = [NSURLRequest requestWithURL:myUrl];
     
-    [_webView loadRequest:myRequest];
+    [_webView loadRequest:urlRequest];
+    
+}
+
+-(void)handleRefresh:(UIRefreshControl *)refresh {
     
     
+    [self loadWebView];
+    [refresh endRefreshing];
 }
 
 @end
