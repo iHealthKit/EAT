@@ -118,8 +118,8 @@
 				5D1CF19518A68C11001D52AE /* AppDelegate.m */,
 				5D1CF19718A68C11001D52AE /* Main.storyboard */,
 				5D1CF19A18A68C11001D52AE /* ViewController.h */,
-				5D1CF1BA18A691FD001D52AE /* iOS7StatusBar.png */,
 				5D1CF19B18A68C11001D52AE /* ViewController.m */,
+				5D1CF1BA18A691FD001D52AE /* iOS7StatusBar.png */,
 				5D1CF19D18A68C11001D52AE /* Images.xcassets */,
 				5D1CF18C18A68C11001D52AE /* Supporting Files */,
 			);
@@ -460,6 +460,7 @@
 				5D1CF1B618A68C11001D52AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D1CF1B718A68C11001D52AE /* Build configuration list for PBXNativeTarget "EATTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +469,7 @@
 				5D1CF1B918A68C11001D52AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
