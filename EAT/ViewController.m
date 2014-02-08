@@ -19,6 +19,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    UIImage *statusBarImage = [UIImage imageNamed:@"iOS7StatusBar.png"];
+    [_imageView setImage:statusBarImage];
+    
+    
     [self loadWebView];
 }
 
@@ -36,6 +40,7 @@
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myUrl];
     
     [_webView loadRequest:myRequest];
+    
     
 }
 
