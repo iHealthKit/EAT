@@ -1,4 +1,4 @@
 EAT
 ===
 
-Tool that shows the meal-plan for the Pater-Rupert-Mayer-Gymnasium in Pullach, Munich, Germany
+iOS App that shows the meal-plan for the Pater-Rupert-Mayer-Gymnasium in Pullach, Munich, Germany
