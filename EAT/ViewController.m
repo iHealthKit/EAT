@@ -22,7 +22,7 @@
     UIImage *statusBarImage = [UIImage imageNamed:@"iOS7StatusBar.png"];
     [_imageView setImage:statusBarImage];
     
-    [_navigationBarTitle setTitle:@"EAT"];
+    [_navigationBarTitle setTitle:@"EAT."];
     
     [self setURLRequest];
     [self setWRefreshControl];
