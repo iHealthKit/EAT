@@ -7,12 +7,33 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import <SystemConfiguration/SystemConfiguration.h>
 
-@interface ViewController : UIViewController
+@class Reachability;
+
+@interface ViewController : UIViewController <UIWebViewDelegate, UIAlertViewDelegate>
 {
-    //UIRefreshControl *refreshControl;
-    NSURLRequest *urlRequest;
+    // Internet Reachability
+    NSURLRequest *requestObj;
+    Reachability* internetReachable;
+    Reachability* hostReachable;
+    
+    BOOL internetActive;
+    BOOL hostActive;
+    
+    
+    // WebView
+    NSURL *pdfURL;
+    NSString *resourceDocPath;
+    NSString *filePath;
+    int pdfStored;
 }
+
+
+// Internet Connection
+-(void) checkNetworkStatus:(NSNotification *)notice;
+
+- (void)orientationChanged;
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
