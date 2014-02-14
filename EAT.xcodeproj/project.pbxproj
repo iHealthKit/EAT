@@ -58,8 +58,8 @@
 		5D1CF1B018A68C11001D52AE /* EATTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EATTests.m; sourceTree = "<group>"; };
 		5D1CF1BA18A691FD001D52AE /* iOS7StatusBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS7StatusBar.png; sourceTree = "<group>"; };
 		5DB6418818AE610900DC507B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		5DB6418A18AE61A000DC507B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../Reachability.h; sourceTree = "<group>"; };
-		5DB6418B18AE61A000DC507B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../Reachability.m; sourceTree = "<group>"; };
+		5DB6418A18AE61A000DC507B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5DB6418B18AE61A000DC507B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
