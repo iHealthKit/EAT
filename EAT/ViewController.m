@@ -24,15 +24,6 @@
     [_imageView setImage:statusBarImage];
     
     [_navigationBarTitle setTitle:@"EAT."];
-    
-    /*
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    
-    //homeModuleInt = [userDefaults integerForKey:@"homeModule"];
-    if ([userDefaults integerForKey:@"pdfStored"] == 0) {
-        [self storePDF];
-    }
-    */
 
     pdfURL = [NSURL URLWithString:@"http://prmg.de/shared/Schulkueche/Speiseplan.pdf"];
     
@@ -46,10 +37,6 @@
     
 }
 
-/*
--(void)viewWillAppear:(BOOL)animated{
-    [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(orientationChanged:)  name:UIDeviceOrientationDidChangeNotification  object:nil];}
-*/
  
  
 - (void)didReceiveMemoryWarning
@@ -61,12 +48,6 @@
 -(void) viewWillDisappear:(BOOL)animated
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-- (void)orientationChanged {
-    
-    
-    
 }
 
 
@@ -99,6 +80,7 @@
         {
             NSLog(@"The internet is down.");
             internetActive = NO;
+            NSLog(@"InternetActive: %i", internetActive);
             
             break;
         }
@@ -106,6 +88,7 @@
         {
             NSLog(@"The internet is working via WIFI.");
             internetActive = YES;
+            NSLog(@"InternetActive: %i", internetActive);
             
             break;
         }
@@ -113,6 +96,7 @@
         {
             NSLog(@"The internet is working via WWAN.");
             internetActive = YES;
+            NSLog(@"InternetActive: %i", internetActive);
             
             break;
         }
@@ -125,6 +109,7 @@
         {
             NSLog(@"A gateway to the host server is down.");
             hostActive = NO;
+            NSLog(@"hostActive: %i", hostActive);
             
             break;
         }
@@ -132,6 +117,7 @@
         {
             NSLog(@"A gateway to the host server is working via WIFI.");
             hostActive = YES;
+            NSLog(@"hostActive: %i", hostActive);
             
             break;
         }
@@ -139,6 +125,7 @@
         {
             NSLog(@"A gateway to the host server is working via WWAN.");
             hostActive = YES;
+            NSLog(@"hostActive: %i", hostActive);
             
             break;
         }
@@ -162,8 +149,9 @@
     filePath = [resourceDocPath
                           stringByAppendingPathComponent:@"Speiseplan.pdf"];
     [pdfData writeToFile:filePath atomically:YES];
-    
+    NSLog(@"PDF stored");
     //pdfStored = 1;
+    
     
     
     
@@ -180,8 +168,9 @@
     NSURL *url = [NSURL fileURLWithPath:filePath];
     requestObj = [NSURLRequest requestWithURL:url];
     
-    [_webView setDelegate:self];
-    [_webView loadRequest:requestObj];
+    //[_webView setDelegate:self];
+    //[_webView loadRequest:requestObj];
+    [self loadWebView];
     
 }
 
@@ -194,6 +183,8 @@
     // Create Request for the file that was saved in your documents folder
     NSURL *url = [NSURL fileURLWithPath:filePath];
     requestObj = [NSURLRequest requestWithURL:url];
+    
+    NSLog(@"local PDF displayed");
     
     [self loadWebView];
     
@@ -218,32 +209,37 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     filePath = [userDefaults valueForKey:@"filePath"];
     
+    NSLog(@"FilePath: %@", filePath);
 
+    if (filePath == nil && internetActive == 0) {
+        //[self storePDF];
+        [self getWebPDF];
+    }
     
-    if (filePath == nil && internetActive == NO) {
+    if (filePath == nil && internetActive == 1) {
         [self showNoConnectionAlert];
     }
     
-    if (filePath == nil && internetActive == YES) {
-        [self storePDF];
-    }
     
-    
-    if (filePath != nil && internetActive == NO) {
+    if (filePath != nil && internetActive == 1) {
         [self getLocalPDF];
         
     }
     
-    if (filePath != nil && internetActive == YES) {
-        [self storePDF];
+    if (filePath != nil && internetActive == 0) {
+        //[self storePDF];
+        [self getWebPDF];
     }
-
+    
 
     
+
+
+    /*
     NSURL *planURL = [NSURL URLWithString:@"http://prmg.de/shared/Schulkueche/Speiseplan.pdf"];
     [userDefaults setURL:planURL forKey:@"planURL"];
     [userDefaults synchronize];
-    
+    */
     
     
 }
@@ -251,7 +247,7 @@
 - (void)showNoConnectionAlert {
     
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"No Connection"
-                                                   message: @"Your internet connection appears to be offline. \nIn future this shoudln't be a problem because the pdf is downloaded and stored local once you are connected to the internet."
+                                                   message: @"Your internet connection appears to be offline. \nIn future, this shouldn't be a problem because the pdf is downloaded and stored local once you are connected to the internet."
                                                   delegate: self
                                          cancelButtonTitle:@"Dismiss"
                                          otherButtonTitles:nil];

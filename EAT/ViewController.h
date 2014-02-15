@@ -15,8 +15,8 @@
 {
     // Internet Reachability
     NSURLRequest *requestObj;
-    Reachability* internetReachable;
-    Reachability* hostReachable;
+    Reachability *internetReachable;
+    Reachability *hostReachable;
     
     BOOL internetActive;
     BOOL hostActive;
@@ -33,8 +33,7 @@
 // Internet Connection
 -(void) checkNetworkStatus:(NSNotification *)notice;
 
-- (void)orientationChanged;
-
+// Outlets
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;

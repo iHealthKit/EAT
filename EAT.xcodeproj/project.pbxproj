@@ -126,7 +126,6 @@
 				5D1CF19718A68C11001D52AE /* Main.storyboard */,
 				5D1CF19A18A68C11001D52AE /* ViewController.h */,
 				5D1CF19B18A68C11001D52AE /* ViewController.m */,
-				5D1CF1BA18A691FD001D52AE /* iOS7StatusBar.png */,
 				5D1CF19D18A68C11001D52AE /* Images.xcassets */,
 				5D1CF18C18A68C11001D52AE /* Supporting Files */,
 			);
@@ -136,6 +135,7 @@
 		5D1CF18C18A68C11001D52AE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5D1CF1BA18A691FD001D52AE /* iOS7StatusBar.png */,
 				5DB6418A18AE61A000DC507B /* Reachability.h */,
 				5DB6418B18AE61A000DC507B /* Reachability.m */,
 				5D1CF18D18A68C11001D52AE /* EAT-Info.plist */,
