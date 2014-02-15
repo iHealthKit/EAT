@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scalesPageToFit="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNJ-gs-5sf">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNJ-gs-5sf">
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,6 +36,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sNJ-gs-5sf" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="64" id="2ZT-dV-GV0"/>
+                            <constraint firstAttribute="bottom" secondItem="sNJ-gs-5sf" secondAttribute="bottom" id="6rP-mG-kpn"/>
                             <constraint firstItem="sNJ-gs-5sf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ALv-cU-DIg"/>
                             <constraint firstAttribute="trailing" secondItem="sNJ-gs-5sf" secondAttribute="trailing" id="ICi-bb-FBu"/>
                             <constraint firstItem="nqO-0n-0VB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="OlD-A8-iGV"/>
