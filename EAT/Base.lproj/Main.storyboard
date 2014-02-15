@@ -22,6 +22,10 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UcV-OS-FIJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nqO-0n-0VB">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -29,18 +33,16 @@
                                     <navigationItem title="Title" id="7Mx-G7-lGv"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UcV-OS-FIJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sNJ-gs-5sf" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="64" id="2ZT-dV-GV0"/>
                             <constraint firstAttribute="bottom" secondItem="sNJ-gs-5sf" secondAttribute="bottom" id="6rP-mG-kpn"/>
                             <constraint firstItem="sNJ-gs-5sf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ALv-cU-DIg"/>
+                            <constraint firstAttribute="trailing" secondItem="UcV-OS-FIJ" secondAttribute="trailing" id="Hz9-zI-b8V"/>
                             <constraint firstAttribute="trailing" secondItem="sNJ-gs-5sf" secondAttribute="trailing" id="ICi-bb-FBu"/>
                             <constraint firstItem="nqO-0n-0VB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="OlD-A8-iGV"/>
+                            <constraint firstItem="UcV-OS-FIJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="jQB-LZ-5VJ"/>
                             <constraint firstAttribute="trailing" secondItem="nqO-0n-0VB" secondAttribute="trailing" id="qqd-bs-Kop"/>
                         </constraints>
                     </view>
