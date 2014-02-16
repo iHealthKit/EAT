@@ -22,10 +22,12 @@
 		5D1CF1AF18A68C11001D52AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D1CF1AD18A68C11001D52AE /* InfoPlist.strings */; };
 		5D1CF1B118A68C11001D52AE /* EATTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CF1B018A68C11001D52AE /* EATTests.m */; };
 		5D1CF1BB18A691FD001D52AE /* iOS7StatusBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1CF1BA18A691FD001D52AE /* iOS7StatusBar.png */; };
-		5D8C0F2118AF8A7400A10F37 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8C0F2018AF8A7400A10F37 /* Main-iPad.storyboard */; };
 		5DB6418918AE610900DC507B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB6418818AE610900DC507B /* SystemConfiguration.framework */; };
 		5DB6418C18AE61A100DC507B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6418B18AE61A000DC507B /* Reachability.m */; };
+		8093AD0618B0BF1900D1118C /* InfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8093AD0518B0BF1900D1118C /* InfoTableViewController.m */; };
+		8093AD0818B0C31800D1118C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8093AD0718B0C31800D1118C /* MessageUI.framework */; };
 		80CA779118AFD0E4008518CC /* Copyright.txt in Resources */ = {isa = PBXBuildFile; fileRef = 80CA779018AFD0E4008518CC /* Copyright.txt */; };
+		80E2936D18B10C1B00F25E27 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E2936C18B10C1B00F25E27 /* Main-iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,11 +61,14 @@
 		5D1CF1AE18A68C11001D52AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5D1CF1B018A68C11001D52AE /* EATTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EATTests.m; sourceTree = "<group>"; };
 		5D1CF1BA18A691FD001D52AE /* iOS7StatusBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS7StatusBar.png; sourceTree = "<group>"; };
-		5D8C0F2018AF8A7400A10F37 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
 		5DB6418818AE610900DC507B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5DB6418A18AE61A000DC507B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5DB6418B18AE61A000DC507B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		8093AD0418B0BF1900D1118C /* InfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewController.h; sourceTree = "<group>"; };
+		8093AD0518B0BF1900D1118C /* InfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewController.m; sourceTree = "<group>"; };
+		8093AD0718B0C31800D1118C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		80CA779018AFD0E4008518CC /* Copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Copyright.txt; path = Icons/AppIcon/Copyright.txt; sourceTree = SOURCE_ROOT; };
+		80E2936C18B10C1B00F25E27 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8093AD0818B0C31800D1118C /* MessageUI.framework in Frameworks */,
 				5DB6418918AE610900DC507B /* SystemConfiguration.framework in Frameworks */,
 				5D1CF18818A68C11001D52AE /* CoreGraphics.framework in Frameworks */,
 				5D1CF18A18A68C11001D52AE /* UIKit.framework in Frameworks */,
@@ -113,6 +119,7 @@
 		5D1CF18418A68C11001D52AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8093AD0718B0C31800D1118C /* MessageUI.framework */,
 				5DB6418818AE610900DC507B /* SystemConfiguration.framework */,
 				5D1CF18518A68C11001D52AE /* Foundation.framework */,
 				5D1CF18718A68C11001D52AE /* CoreGraphics.framework */,
@@ -128,9 +135,11 @@
 				5D1CF19418A68C11001D52AE /* AppDelegate.h */,
 				5D1CF19518A68C11001D52AE /* AppDelegate.m */,
 				5D1CF19718A68C11001D52AE /* Main-iPhone.storyboard */,
-				5D8C0F2018AF8A7400A10F37 /* Main-iPad.storyboard */,
+				80E2936C18B10C1B00F25E27 /* Main-iPad.storyboard */,
 				5D1CF19A18A68C11001D52AE /* ViewController.h */,
 				5D1CF19B18A68C11001D52AE /* ViewController.m */,
+				8093AD0418B0BF1900D1118C /* InfoTableViewController.h */,
+				8093AD0518B0BF1900D1118C /* InfoTableViewController.m */,
 				80CA779018AFD0E4008518CC /* Copyright.txt */,
 				5D1CF19D18A68C11001D52AE /* Images.xcassets */,
 				5D1CF18C18A68C11001D52AE /* Supporting Files */,
@@ -252,9 +261,9 @@
 				80CA779118AFD0E4008518CC /* Copyright.txt in Resources */,
 				5D1CF19E18A68C11001D52AE /* Images.xcassets in Resources */,
 				5D1CF19018A68C11001D52AE /* InfoPlist.strings in Resources */,
-				5D8C0F2118AF8A7400A10F37 /* Main-iPad.storyboard in Resources */,
 				5D1CF19918A68C11001D52AE /* Main-iPhone.storyboard in Resources */,
 				5D1CF1BB18A691FD001D52AE /* iOS7StatusBar.png in Resources */,
+				80E2936D18B10C1B00F25E27 /* Main-iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8093AD0618B0BF1900D1118C /* InfoTableViewController.m in Sources */,
 				5D1CF19C18A68C11001D52AE /* ViewController.m in Sources */,
 				5D1CF19618A68C11001D52AE /* AppDelegate.m in Sources */,
 				5DB6418C18AE61A100DC507B /* Reachability.m in Sources */,
@@ -406,7 +416,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EAT/EAT-Prefix.pch";
 				INFOPLIST_FILE = "EAT/EAT-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,7 +434,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EAT/EAT-Prefix.pch";
 				INFOPLIST_FILE = "EAT/EAT-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -20,12 +20,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    UIImage *statusBarImage = [UIImage imageNamed:@"iOS7StatusBar.png"];
-    [_imageView setImage:statusBarImage];
-    
-    [_navigationBarTitle setTitle:@"EAT."];
+    [self setTitle:@"EAT."];
 
     pdfURL = [NSURL URLWithString:@"http://prmg.de/shared/Schulkueche/Speiseplan.pdf"];
+    
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setURL:pdfURL forKey:@"pdfURL"];
@@ -35,8 +33,14 @@
     [self setRefreshControl];
     [self setPdfRequest];
     
+    
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    //[self setPdfRequest];
+    
+}
  
  
 - (void)didReceiveMemoryWarning
@@ -48,6 +52,7 @@
 -(void) viewWillDisappear:(BOOL)animated
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    NSLog(@"observer removed");
 }
 
 
@@ -62,10 +67,11 @@
     [internetReachable startNotifier];
     
     // check if a pathway to a random host exists
-    hostReachable = [Reachability reachabilityWithHostName:@"www.prmg.de"];
+    hostReachable = [Reachability reachabilityWithHostName:@"www.apple.com"];
     [hostReachable startNotifier];
     
     // now patiently wait for the notification
+    NSLog(@"observer started");
     
 }
 
@@ -136,6 +142,16 @@
 
 - (void)storePDF {
     
+    // Read NSUser defaults
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    filePath = [userDefaults valueForKey:@"filePath"];
+    
+    
+    if (filePath != nil) {
+        [[NSFileManager defaultManager] removeItemAtPath:filePath error: nil];
+        NSLog(@"old file deleted");
+    }
+    
     // Get the PDF Data from the url in a NSData Object
     NSData *pdfData = [[NSData alloc] initWithContentsOfURL:[
                                                              NSURL URLWithString:@"http://prmg.de/shared/Schulkueche/Speiseplan.pdf"]];
@@ -150,27 +166,12 @@
                           stringByAppendingPathComponent:@"Speiseplan.pdf"];
     [pdfData writeToFile:filePath atomically:YES];
     NSLog(@"PDF stored");
-    //pdfStored = 1;
     
     
-    
-    
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    
-    [userDefaults setURL:pdfURL forKey:@"pdfURL"];
-    [userDefaults setInteger:pdfStored forKey:@"pdfStored"];
     [userDefaults setValue:resourceDocPath forKey:@"resourceDocPath"];
     [userDefaults setValue:filePath forKey:@"filePath"];
     [userDefaults synchronize];
     
-    
-    // Now create Request for the file that was saved in your documents folder
-    NSURL *url = [NSURL fileURLWithPath:filePath];
-    requestObj = [NSURLRequest requestWithURL:url];
-    
-    //[_webView setDelegate:self];
-    //[_webView loadRequest:requestObj];
-    [self loadWebView];
     
 }
 
@@ -184,21 +185,21 @@
     NSURL *url = [NSURL fileURLWithPath:filePath];
     requestObj = [NSURLRequest requestWithURL:url];
     
-    NSLog(@"local PDF displayed");
+    [_webView loadRequest:requestObj];
     
-    [self loadWebView];
+    NSLog(@"local PDF displayed");
     
 }
 
 
 - (void)getWebPDF {
     
-    NSURL *myUrl = [NSURL URLWithString:@"http://prmg.de/shared/Schulkueche/Speiseplan.pdf"];
-    requestObj = [NSURLRequest requestWithURL:myUrl];
+    requestObj = [NSURLRequest requestWithURL:pdfURL];
+    [_webView loadRequest:requestObj];
+    NSLog(@"load Request");
+
     
     [self storePDF];
-    [self loadWebView];
-
     
 }
 
@@ -210,7 +211,7 @@
     filePath = [userDefaults valueForKey:@"filePath"];
     
     NSLog(@"FilePath: %@", filePath);
-
+    
     if (filePath == nil && internetActive == 0) {
         //[self storePDF];
         [self getWebPDF];
@@ -220,28 +221,35 @@
         [self showNoConnectionAlert];
     }
     
-    
     if (filePath != nil && internetActive == 1) {
         [self getLocalPDF];
         
     }
     
-    if (filePath != nil && internetActive == 0) {
+    if (filePath != nil && internetActive == 0
+        ) {
         //[self storePDF];
         [self getWebPDF];
     }
-    
 
     
-
-
     /*
-    NSURL *planURL = [NSURL URLWithString:@"http://prmg.de/shared/Schulkueche/Speiseplan.pdf"];
-    [userDefaults setURL:planURL forKey:@"planURL"];
-    [userDefaults synchronize];
+    if (filePath == nil) {
+        if (internetActive == 0) {
+            [self getWebPDF];
+        }
+        else {
+            [self showNoConnectionAlert];
+        }
+    } else {
+        if (internetActive == 1) {
+            [self getLocalPDF];
+        }
+        else {
+            [self getWebPDF];
+        }
+    }
     */
-    
-    
 }
 
 - (void)showNoConnectionAlert {
@@ -266,14 +274,6 @@
     
 }
 
-
-- (void)loadWebView {
-    
-    
-    [_webView loadRequest:requestObj];
-    //[self storePDF];
-    
-}
 
 -(void)handleRefresh:(UIRefreshControl *)refresh {
     
