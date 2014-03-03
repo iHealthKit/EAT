@@ -15,6 +15,7 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -32,7 +33,7 @@
     [self startInternetStatusObserver];
     [self setRefreshControl];
     [self setPdfRequest];
-    
+
     
 }
 
@@ -282,4 +283,50 @@
     [refresh endRefreshing];
 }
 
+
+// TODO: Make it print
+- (IBAction)actionButton:(id)sender {
+
+
+    /*
+    NSString* someText = @"Hi";
+    NSArray* dataToShare = @[someText];  // ...or whatever pieces of data you want to share.
+    NSArray *pdfToShare = [NSData dataWithContentsOfFile:PDFFileWithName];
+
+    UIActivityViewController* activityViewController =
+            [[UIActivityViewController alloc] initWithActivityItems:dataToShare
+                                              applicationActivities:nil];
+    [self presentViewController:activityViewController animated:YES completion:^{}];
+    */
+
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Speiseplan" ofType:@"pdf"];
+    NSData *dataFromPath = [NSData dataWithContentsOfFile:path];
+
+    UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
+
+    if(printController && [UIPrintInteractionController canPrintData:dataFromPath]) {
+
+        printController.delegate = self;
+
+        UIPrintInfo *printInfo = [UIPrintInfo printInfo];
+        printInfo.outputType = UIPrintInfoOutputGeneral;
+        printInfo.jobName = [path lastPathComponent];
+        printInfo.duplex = UIPrintInfoDuplexLongEdge;
+        printController.printInfo = printInfo;
+        printController.showsPageRange = YES;
+        printController.printingItem = dataFromPath;
+
+        void (^completionHandler)(UIPrintInteractionController *, BOOL, NSError *) = ^(UIPrintInteractionController *printController, BOOL completed, NSError *error) {
+            if (!completed && error) {
+                NSLog(@"FAILED! due to error in domain %@ with error code %ld", error.domain, (long)error.code);
+            }
+        };
+
+        [printController presentAnimated:YES completionHandler:completionHandler];
+
+    }
+
+
+
+}
 @end

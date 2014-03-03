@@ -11,7 +11,7 @@
 
 @class Reachability;
 
-@interface ViewController : UIViewController <UIWebViewDelegate, UIAlertViewDelegate>
+@interface ViewController : UIViewController <UIWebViewDelegate, UIAlertViewDelegate, UIPrintInteractionControllerDelegate>
 {
     // Internet Reachability
     NSURLRequest *requestObj;
@@ -34,5 +34,7 @@
 -(void) checkNetworkStatus:(NSNotification *)notice;
 
 // Outlets
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *actionButton;
+- (IBAction)actionButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end

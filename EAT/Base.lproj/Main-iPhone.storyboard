@@ -26,6 +26,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="05I-AR-Xh8">
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="4aT-2d-j0Q">
+                            <connections>
+                                <action selector="actionButton:" destination="8zh-YE-WQO" id="zqg-D5-gq8"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="qM9-wG-aiz">
                             <button key="customView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="cU2-jF-ezn">
                                 <rect key="frame" x="282" y="11" width="22" height="22"/>
@@ -44,6 +49,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="actionButton" destination="4aT-2d-j0Q" id="UXf-wq-JVB"/>
                         <outlet property="webView" destination="sNJ-gs-5sf" id="8J7-c3-ihw"/>
                     </connections>
                 </viewController>
