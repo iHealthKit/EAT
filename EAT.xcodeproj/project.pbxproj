@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0842D89AB4478F384E5B88 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1E0840B480D21C61E6A72A71 /* .travis.yml */; };
 		5D1CF18618A68C11001D52AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1CF18518A68C11001D52AE /* Foundation.framework */; };
 		5D1CF18818A68C11001D52AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1CF18718A68C11001D52AE /* CoreGraphics.framework */; };
 		5D1CF18A18A68C11001D52AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1CF18918A68C11001D52AE /* UIKit.framework */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E0840B480D21C61E6A72A71 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		5D1CF18218A68C11001D52AE /* EAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1CF18518A68C11001D52AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D1CF18718A68C11001D52AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,6 +149,7 @@
 				80CA779018AFD0E4008518CC /* Copyright.txt */,
 				5D1CF19D18A68C11001D52AE /* Images.xcassets */,
 				5D1CF18C18A68C11001D52AE /* Supporting Files */,
+				1E0840B480D21C61E6A72A71 /* .travis.yml */,
 			);
 			path = EAT;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				5D1CF19918A68C11001D52AE /* Main-iPhone.storyboard in Resources */,
 				5D1CF1BB18A691FD001D52AE /* iOS7StatusBar.png in Resources */,
 				80E2936D18B10C1B00F25E27 /* Main-iPad.storyboard in Resources */,
+				1E0842D89AB4478F384E5B88 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
