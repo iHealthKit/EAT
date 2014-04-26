@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c11fa23-f447-4a75-bfa4-5464d8ea956b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT/.travis.yml" afterPath="$PROJECT_DIR$/EAT/.travis.yml" />
-    </list>
+    <list default="true" id="4c11fa23-f447-4a75-bfa4-5464d8ea956b" name="Default" comment="" />
     <ignored path="EAT.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
