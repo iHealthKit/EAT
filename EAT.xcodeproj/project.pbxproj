@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E0842D89AB4478F384E5B88 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1E0840B480D21C61E6A72A71 /* .travis.yml */; };
 		5D1CF18618A68C11001D52AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1CF18518A68C11001D52AE /* Foundation.framework */; };
 		5D1CF18818A68C11001D52AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1CF18718A68C11001D52AE /* CoreGraphics.framework */; };
 		5D1CF18A18A68C11001D52AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1CF18918A68C11001D52AE /* UIKit.framework */; };
@@ -25,6 +24,7 @@
 		5D1CF1BB18A691FD001D52AE /* iOS7StatusBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1CF1BA18A691FD001D52AE /* iOS7StatusBar.png */; };
 		5DB6418918AE610900DC507B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB6418818AE610900DC507B /* SystemConfiguration.framework */; };
 		5DB6418C18AE61A100DC507B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6418B18AE61A000DC507B /* Reachability.m */; };
+		5DBEBB6F190C2E060091D10F /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5DBEBB6E190C2E060091D10F /* .travis.yml */; };
 		806B39C118BA370F009C8F62 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806B39C018BA370F009C8F62 /* Social.framework */; };
 		8093AD0618B0BF1900D1118C /* InfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8093AD0518B0BF1900D1118C /* InfoTableViewController.m */; };
 		8093AD0818B0C31800D1118C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8093AD0718B0C31800D1118C /* MessageUI.framework */; };
@@ -43,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E0840B480D21C61E6A72A71 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		5D1CF18218A68C11001D52AE /* EAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1CF18518A68C11001D52AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D1CF18718A68C11001D52AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,6 +66,7 @@
 		5DB6418818AE610900DC507B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5DB6418A18AE61A000DC507B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5DB6418B18AE61A000DC507B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5DBEBB6E190C2E060091D10F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
 		806B39C018BA370F009C8F62 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8093AD0418B0BF1900D1118C /* InfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewController.h; sourceTree = "<group>"; };
 		8093AD0518B0BF1900D1118C /* InfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewController.m; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 				8093AD0518B0BF1900D1118C /* InfoTableViewController.m */,
 				80CA779018AFD0E4008518CC /* Copyright.txt */,
 				5D1CF19D18A68C11001D52AE /* Images.xcassets */,
+				5DBEBB6E190C2E060091D10F /* .travis.yml */,
 				5D1CF18C18A68C11001D52AE /* Supporting Files */,
-				1E0840B480D21C61E6A72A71 /* .travis.yml */,
 			);
 			path = EAT;
 			sourceTree = "<group>";
@@ -270,8 +270,8 @@
 				5D1CF19018A68C11001D52AE /* InfoPlist.strings in Resources */,
 				5D1CF19918A68C11001D52AE /* Main-iPhone.storyboard in Resources */,
 				5D1CF1BB18A691FD001D52AE /* iOS7StatusBar.png in Resources */,
+				5DBEBB6F190C2E060091D10F /* .travis.yml in Resources */,
 				80E2936D18B10C1B00F25E27 /* Main-iPad.storyboard in Resources */,
-				1E0842D89AB4478F384E5B88 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
