@@ -1,3 +1,5 @@
 language: objective-c
 xcode_project: EAT.xcodeproj
 xcode_scheme: EAT
+
+script: xcodebuild -project EAT.xcodeproj -target EAT -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
