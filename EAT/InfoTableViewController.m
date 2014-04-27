@@ -51,9 +51,9 @@
 
     [_contactViaMailLabel setTextColor:[UIColor colorWithRed:(0) green:(122/255) blue:(1) alpha:(1.0)]];
 
-    NSSt *hi = @"hi";
+    //NSSt *hi = @"hi";
 
-    
+
     [_contactViaIMessageLabel setText:@"Contact via iMessage"];
     [_contactViaFaceTimeLabel setText:@"Contact via FaceTime"];
     [_contactViaMailLabel setText:@"Contact via Mail"];
