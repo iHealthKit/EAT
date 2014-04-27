@@ -4,7 +4,7 @@ xcode_scheme: EAT
 xcode_sdk: iphonesimulator7.1
 
 before_script:
-export LANG=en_US.UTF-8
+    export LANG=en_US.UTF-8
 
 
 before_install:
