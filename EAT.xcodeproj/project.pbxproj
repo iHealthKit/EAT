@@ -30,7 +30,6 @@
 		8093AD0818B0C31800D1118C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8093AD0718B0C31800D1118C /* MessageUI.framework */; };
 		80CA779118AFD0E4008518CC /* Copyright.txt in Resources */ = {isa = PBXBuildFile; fileRef = 80CA779018AFD0E4008518CC /* Copyright.txt */; };
 		80E2936D18B10C1B00F25E27 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E2936C18B10C1B00F25E27 /* Main-iPad.storyboard */; };
-		89C58B8EB54D40AAA434343B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F36786430D841B19F74C09B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +67,6 @@
 		5DB6418A18AE61A000DC507B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5DB6418B18AE61A000DC507B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5DBEBB6E190C2E060091D10F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
-		6AB8B88A8AC2495BB5E86129 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		6F36786430D841B19F74C09B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		806B39C018BA370F009C8F62 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8093AD0418B0BF1900D1118C /* InfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewController.h; sourceTree = "<group>"; };
 		8093AD0518B0BF1900D1118C /* InfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewController.m; sourceTree = "<group>"; };
@@ -89,7 +86,6 @@
 				5D1CF18818A68C11001D52AE /* CoreGraphics.framework in Frameworks */,
 				5D1CF18A18A68C11001D52AE /* UIKit.framework in Frameworks */,
 				5D1CF18618A68C11001D52AE /* Foundation.framework in Frameworks */,
-				89C58B8EB54D40AAA434343B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +109,6 @@
 				5D1CF1AA18A68C11001D52AE /* EATTests */,
 				5D1CF18418A68C11001D52AE /* Frameworks */,
 				5D1CF18318A68C11001D52AE /* Products */,
-				6AB8B88A8AC2495BB5E86129 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,7 +131,6 @@
 				5D1CF18718A68C11001D52AE /* CoreGraphics.framework */,
 				5D1CF18918A68C11001D52AE /* UIKit.framework */,
 				5D1CF1A418A68C11001D52AE /* XCTest.framework */,
-				6F36786430D841B19F74C09B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,11 +193,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D1CF1B418A68C11001D52AE /* Build configuration list for PBXNativeTarget "EAT" */;
 			buildPhases = (
-				C99CF2E2D75142F2976AD1B6 /* Check Pods Manifest.lock */,
 				5D1CF17E18A68C11001D52AE /* Sources */,
 				5D1CF17F18A68C11001D52AE /* Frameworks */,
 				5D1CF18018A68C11001D52AE /* Resources */,
-				94EAFB3120394BF9A9E1D577 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,39 +284,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		94EAFB3120394BF9A9E1D577 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C99CF2E2D75142F2976AD1B6 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D1CF17E18A68C11001D52AE /* Sources */ = {
@@ -457,12 +416,11 @@
 		};
 		5D1CF1B518A68C11001D52AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AB8B88A8AC2495BB5E86129 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Stefan Kollmer (JF72348LUT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EAT/EAT-Prefix.pch";
 				INFOPLIST_FILE = "EAT/EAT-Info.plist";
@@ -476,12 +434,11 @@
 		};
 		5D1CF1B618A68C11001D52AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AB8B88A8AC2495BB5E86129 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Stefan Kollmer (JF72348LUT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EAT/EAT-Prefix.pch";
 				INFOPLIST_FILE = "EAT/EAT-Info.plist";

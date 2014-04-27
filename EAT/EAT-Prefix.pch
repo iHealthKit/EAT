@@ -5,7 +5,6 @@
 //
 
 #import <Availability.h>
-//#import "DDLog.h"
 
 #ifndef __IPHONE_5_0
 #warning "This project uses features only available in iOS SDK 5.0 and later."
@@ -15,12 +14,3 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
-
-/*
-// CocoaLumberjack
-
-// Uncomment the following line if you want to log everything
-static  const  int ddLogLevel = LOG_LEVEL_VERBOSE;
-// Uncomment the following line if you want to log nothing
-//static const int ddLogLevel = LOG_LEVEL_OFF;
-*/
