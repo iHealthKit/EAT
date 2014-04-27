@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c11fa23-f447-4a75-bfa4-5464d8ea956b" name="Default" comment="" />
+    <list default="true" id="4c11fa23-f447-4a75-bfa4-5464d8ea956b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT/InfoTableViewController.m" afterPath="$PROJECT_DIR$/EAT/InfoTableViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="EAT.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,16 +20,16 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_d4faf3b545ca20f3aee88d0a9f582e63493c81ad" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
   <component name="FavoritesManager">
     <favorites_list name="EAT" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EAT/.travis.yml">
+      <file leaf-file-name="InfoTableViewController.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EAT/InfoTableViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.018703243" vertical-offset="0" max-vertical-offset="802">
+            <state line="53" column="21" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.72243345" vertical-offset="225" max-vertical-offset="3075">
               <folding />
             </state>
           </provider>
@@ -53,6 +56,7 @@
         <option value="$PROJECT_DIR$/EAT/ViewController.h" />
         <option value="$PROJECT_DIR$/EAT/ViewController.m" />
         <option value="$PROJECT_DIR$/EAT/.travis.yml" />
+        <option value="$PROJECT_DIR$/EAT/InfoTableViewController.m" />
       </list>
     </option>
   </component>
@@ -86,16 +90,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EAT" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -138,17 +132,27 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Cidr.FilesView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EAT" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.cidr.cocoapods.CocoaPodsConfigurable" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/EAT.xcodeproj" />
     <property name="FullScreen" value="true" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="EAT" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.EAT">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="EAT" TARGET_NAME="EAT" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="EAT" RUN_TARGET_NAME="EAT" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -314,11 +318,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EAT/InfoTableViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2639" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EAT/ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="281" column="25" selection-start="7541" selection-end="7541" vertical-scroll-proportion="0.08998732" vertical-offset="3582" max-vertical-offset="4394" />
@@ -329,9 +328,9 @@
         <state line="38" column="56" selection-start="916" selection-end="916" vertical-scroll-proportion="0.59975064" vertical-offset="0" max-vertical-offset="802" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EAT/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/EAT/InfoTableViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.018703243" vertical-offset="0" max-vertical-offset="802">
+        <state line="53" column="21" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.72243345" vertical-offset="225" max-vertical-offset="3075">
           <folding />
         </state>
       </provider>
