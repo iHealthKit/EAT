@@ -7,15 +7,15 @@
 //
 
 #import "AppDelegate.h"
-#import "DDASLLogger.h"
-#import "DDTTYLogger.h"
+//#import "DDASLLogger.h"
+//#import "DDTTYLogger.h"
 
 @implementation AppDelegate
 
 + (void)initialize
 {
-    [DDLog addLogger:[DDASLLogger sharedInstance]];
-    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    //[DDLog addLogger:[DDASLLogger sharedInstance]];
+    //[DDLog addLogger:[DDTTYLogger sharedInstance]];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
