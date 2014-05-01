@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c11fa23-f447-4a75-bfa4-5464d8ea956b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/EAT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Podfile" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EAT.xcodeproj/xcuserdata/LukasKollmer.xcuserdatad/xcschemes/EAT.xcscheme" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT/InfoTableViewController.m" afterPath="$PROJECT_DIR$/EAT/InfoTableViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT/AppDelegate.m" afterPath="$PROJECT_DIR$/EAT/AppDelegate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT/EAT-Prefix.pch" afterPath="$PROJECT_DIR$/EAT/EAT-Prefix.pch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT/ViewController.m" afterPath="$PROJECT_DIR$/EAT/ViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/EAT.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/xcode.xml" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT.xcodeproj/xcuserdata/LukasKollmer.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/EAT.xcodeproj/xcuserdata/LukasKollmer.xcuserdatad/xcschemes/xcschememanagement.plist" />
     </list>
     <ignored path="EAT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,19 +35,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EAT/ViewController.m">
+      <file leaf-file-name="InfoTableViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EAT/InfoTableViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="281" column="25" selection-start="7541" selection-end="7541" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5055">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.056925997" vertical-offset="0" max-vertical-offset="527">
+            <state line="66" column="55" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3075">
               <folding />
             </state>
           </provider>
@@ -48,17 +47,59 @@
       <file leaf-file-name="EATTests.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EATTests/EATTests.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="1" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="600">
+            <state line="25" column="1" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfoTableViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EAT/InfoTableViewController.m">
+      <file leaf-file-name="Podfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Podfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="55" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="3075">
+            <state line="1" column="21" selection-start="42" selection-end="42" vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="105">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="17" selection-start="72" selection-end="72" vertical-scroll-proportion="0.037406486" vertical-offset="0" max-vertical-offset="802">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EAT-Prefix.pch" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EAT/EAT-Prefix.pch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="2" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppDelegate.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EAT/AppDelegate.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="1" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="945">
+              <folding>
+                <element signature="e#137#160#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EAT/ViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="285" column="0" selection-start="7574" selection-end="7574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5055">
+              <folding>
+                <element signature="e#140#166#0" expanded="true" />
+                <marker date="1398942393000" expanded="true" signature="259:9328" placeholder="..." />
+                <marker date="1398942393000" expanded="true" signature="7611:9327" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,10 +123,13 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/EAT/ViewController.h" />
-        <option value="$PROJECT_DIR$/EAT/ViewController.m" />
         <option value="$PROJECT_DIR$/EAT/.travis.yml" />
         <option value="$PROJECT_DIR$/EAT/InfoTableViewController.m" />
         <option value="$PROJECT_DIR$/EATTests/EATTests.m" />
+        <option value="$PROJECT_DIR$/EAT/ViewController.m" />
+        <option value="$PROJECT_DIR$/Podfile" />
+        <option value="$PROJECT_DIR$/EAT/EAT-Prefix.pch" />
+        <option value="$PROJECT_DIR$/EAT/AppDelegate.m" />
         <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
@@ -122,6 +166,12 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" />
@@ -176,13 +226,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="com.jetbrains.cidr.cocoapods.CocoaPodsConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="settings.github" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/EAT.xcodeproj" />
     <property name="FullScreen" value="true" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="EAT" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.EAT">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="EAT" TARGET_NAME="EAT" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="EAT" RUN_TARGET_NAME="EAT" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -197,16 +247,18 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="EAT" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="EAT" PROJECT_NAME="EAT" TARGET_NAME="EAT" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="EAT" RUN_TARGET_NAME="EAT" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="false" name="Pods-CocoaLumberjack" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="Pods-CocoaLumberjack" PROJECT_NAME="Pods" TARGET_NAME="Pods-CocoaLumberjack" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <RunnerSettings RunnerId="InstrumentsRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="InstrumentsRunner" />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="Pods" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="Pods" PROJECT_NAME="Pods" TARGET_NAME="Pods" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.EAT" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Pods-CocoaLumberjack" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Pods" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -259,15 +311,15 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971016" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19266056" sideWeight="0.6702899" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19266056" sideWeight="0.67108434" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32971016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -290,21 +342,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EAT/ViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="56" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="598" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EAT/ViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="4394" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EAT/InfoTableViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2639" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EAT/ViewController.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="56" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="598" />
@@ -350,16 +387,34 @@
         <state line="38" column="56" selection-start="916" selection-end="916" vertical-scroll-proportion="0.59975064" vertical-offset="0" max-vertical-offset="802" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EAT/ViewController.m">
+    <entry file="file://$PROJECT_DIR$/EATTests/EATTests.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="25" selection-start="7541" selection-end="7541" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5055">
+        <state line="25" column="1" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EATTests/EATTests.m">
+    <entry file="file://$PROJECT_DIR$/EAT/ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="600">
+        <state line="285" column="0" selection-start="7574" selection-end="7574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5055">
+          <folding>
+            <element signature="e#140#166#0" expanded="true" />
+            <marker date="1398942393000" expanded="true" signature="259:9328" placeholder="..." />
+            <marker date="1398942393000" expanded="true" signature="7611:9327" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="21" selection-start="42" selection-end="42" vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EAT/EAT-Prefix.pch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="2" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
@@ -371,9 +426,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EAT/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="1" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="945">
+          <folding>
+            <element signature="e#137#160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.056925997" vertical-offset="0" max-vertical-offset="527">
+        <state line="2" column="17" selection-start="72" selection-end="72" vertical-scroll-proportion="0.037406486" vertical-offset="0" max-vertical-offset="802">
           <folding />
         </state>
       </provider>
