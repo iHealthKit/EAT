@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c11fa23-f447-4a75-bfa4-5464d8ea956b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/EAT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Podfile" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EAT.xcodeproj/xcuserdata/LukasKollmer.xcuserdatad/xcschemes/EAT.xcscheme" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT/AppDelegate.m" afterPath="$PROJECT_DIR$/EAT/AppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT/EAT-Prefix.pch" afterPath="$PROJECT_DIR$/EAT/EAT-Prefix.pch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT/ViewController.m" afterPath="$PROJECT_DIR$/EAT/ViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/EAT.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/xcode.xml" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EAT.xcodeproj/xcuserdata/LukasKollmer.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/EAT.xcodeproj/xcuserdata/LukasKollmer.xcuserdatad/xcschemes/xcschememanagement.plist" />
     </list>
     <ignored path="EAT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +55,7 @@
       <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="17" selection-start="72" selection-end="72" vertical-scroll-proportion="0.037406486" vertical-offset="0" max-vertical-offset="802">
+            <state line="6" column="14" selection-start="119" selection-end="119" vertical-scroll-proportion="0.11221945" vertical-offset="0" max-vertical-offset="802">
               <folding />
             </state>
           </provider>
@@ -227,7 +217,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="com.jetbrains.cidr.cocoapods.CocoaPodsConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/EAT.xcodeproj" />
     <property name="FullScreen" value="true" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="EAT" />
@@ -437,7 +427,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="72" selection-end="72" vertical-scroll-proportion="0.037406486" vertical-offset="0" max-vertical-offset="802">
+        <state line="6" column="14" selection-start="119" selection-end="119" vertical-scroll-proportion="0.11221945" vertical-offset="0" max-vertical-offset="802">
           <folding />
         </state>
       </provider>
