@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Reachability.h"
 
+
 @interface ViewController ()
 
 @end
@@ -152,20 +153,24 @@
         [[NSFileManager defaultManager] removeItemAtPath:filePath error: nil];
         NSLog(@"old file deleted");
     }
-    
-    // Get the PDF Data from the url in a NSData Object
-    NSData *pdfData = [[NSData alloc] initWithContentsOfURL:[
-                                                             NSURL URLWithString:@"http://prmg.de/shared/Schulkueche/Speiseplan.pdf"]];
-    
-    // Store the Data locally as PDF File
-    resourceDocPath = [[NSString alloc] initWithString:[
-                                                                  [[[NSBundle mainBundle] resourcePath] stringByDeletingLastPathComponent]
-                                                                  stringByAppendingPathComponent:@"Documents"
-                                                                  ]];
-    
-    filePath = [resourceDocPath
-                          stringByAppendingPathComponent:@"Speiseplan.pdf"];
-    [pdfData writeToFile:filePath atomically:YES];
+
+    NSString *stringPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0]stringByAppendingPathComponent:@"/data"];
+    NSError *error;
+    if (![[NSFileManager defaultManager] fileExistsAtPath:stringPath])
+        [[NSFileManager defaultManager] createDirectoryAtPath:stringPath withIntermediateDirectories:NO attributes:nil error:&error];
+
+
+    NSData *data = [NSData dataWithContentsOfURL:pdfURL];
+    if(data)
+    {
+        stringPath = [stringPath stringByAppendingPathComponent:[pdfURL lastPathComponent]];
+        BOOL success = [data writeToFile:stringPath atomically:YES];
+        if (success) {
+            NSLog(@"success");
+        } else {
+            NSLog(@"no success");
+        }
+    }
     NSLog(@"PDF stored");
     
     
@@ -177,15 +182,10 @@
 }
 
 - (void)getLocalPDF {
-    
-    // Read NSUser defaults
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    filePath = [userDefaults valueForKey:@"filePath"];
-    
-    // Create Request for the file that was saved in your documents folder
-    NSURL *url = [NSURL fileURLWithPath:filePath];
-    requestObj = [NSURLRequest requestWithURL:url];
-    
+
+
+
+
     [_webView loadRequest:requestObj];
     
     NSLog(@"local PDF displayed");
